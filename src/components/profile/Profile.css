@@ -1,0 +1,11 @@
+.profile {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-img {
+  position: relative;
+  width: 3em;
+  border-radius: 1.5em;
+}

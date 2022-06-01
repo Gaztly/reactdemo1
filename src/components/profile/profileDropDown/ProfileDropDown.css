@@ -1,0 +1,18 @@
+.profiledropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  padding: 0.125em 0.25em;
+  display: none;
+  background-color: var(--clr-primary);
+  color: var(--clr-primary-dark);
+}
+
+.profiledropdown p {
+  cursor: pointer;
+  color: var(--clr-accent-dark);
+}
+.profile:hover .profiledropdown,
+profile:focus-within .profiledropdown {
+  display: block;
+}
