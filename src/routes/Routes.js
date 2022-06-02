@@ -9,6 +9,7 @@ import RoutingPath from "./RoutingPath";
 import LocalStorage from "../shared/storage/LocalStorage";
 import { UserContext } from "../shared/provider/UserProvider";
 import { MovieView } from "../views/MovieView/MovieView";
+import { FindMovieView } from "../views/findmovieview/FindMovieView";
 export const Routing = ({ children }) => {
   const [authenticatedUser, setAuthenticatedUser] = useContext(UserContext); // hämtar globala variabler och tilldelar värde
 
@@ -42,6 +43,8 @@ export const Routing = ({ children }) => {
         <Route path={RoutingPath.homeView} element={<HomeView />} />
         <Route path={RoutingPath.storeView} element={<StoreView />} />
         <Route path={RoutingPath.movieView} element={<MovieView />} />
+        <Route path={RoutingPath.findMovieView} element={<FindMovieView />} />
+
         <Route
           path={RoutingPath.profileview}
           element={authenticationRequired(<ProfileView />)}

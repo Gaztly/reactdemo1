@@ -21,6 +21,7 @@ export const ProfileDropDown = () => {
       <p onClick={() => navigate(RoutingPath.profileview)}>Profile</p>
       <p onClick={() => navigate(RoutingPath.settingsview)}>Settings</p>
       <p onClick={() => navigate(RoutingPath.movieView)}>Movie</p>
+      <p onClick={() => navigate(RoutingPath.findMovieView)}>Find Movie</p>
       <p onClick={() => logout()}>Log Out</p>
     </div>
   );

@@ -22,7 +22,7 @@ export const MovieView = () => {
         placeholder="Enter ID"
         onChange={(e) => setInput(e.target.value)}
       />
-      <buttton onClick={() => fetchData()}>Find Movie</buttton>
+      <button onClick={() => fetchData()}>Find Movie</button>
       <h2>{serverResponse?.data?.title}</h2>
       <button onClick={() => fetchData()}>Fetch Data</button>
     </div>
